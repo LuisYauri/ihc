@@ -1,1 +1,101 @@
-<p>view-courses works!</p>
+<div nz-row>
+  <div nz-col nzSpan="24">
+    <nz-card [nzBordered]="false">
+      <div class="card-title">
+        <div class="card-title--name">{{title}}</div>
+        <div class="card-title--cicle">{{cicle}}</div>
+      </div>
+      <div nz-row>
+		<div nz-col nzSpan="24">
+	        <nz-list [nzDataSource]="semana1" nzBordered [nzHeader]="'Semana 1'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		    <br>
+		    <nz-list [nzDataSource]="semana2" nzBordered [nzHeader]="'Semana 2'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		    <br>
+		    <nz-list [nzDataSource]="semana1" nzBordered [nzHeader]="'Semana 3'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		    <br>
+		    <nz-list [nzDataSource]="semana2" nzBordered [nzHeader]="'Semana 4'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		    <br>
+		    <nz-list [nzDataSource]="semana1" nzBordered [nzHeader]="'Semana 5'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		    <br>
+		    <nz-list [nzDataSource]="semana2" nzBordered [nzHeader]="'Semana 6'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		    <br>
+		    <nz-list [nzDataSource]="semana1" nzBordered [nzHeader]="'Semana 7'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		    <br>
+		    <nz-list [nzDataSource]="semana2" nzBordered [nzHeader]="'Semana 8'" [nzRenderItem]="defaultItem">
+		      <ng-template #defaultItem let-item>
+		        <nz-list-item>
+		          <span style="width: 32px;height: 32px;">
+		          	<img src="https://image.flaticon.com/icons/svg/136/136522.svg" class="ng-star-inserted" style="display: block;width: 100%;height: 100%;vertical-align: middle;border-style: none;">
+		          </span>
+		          <span style="padding-left: 10px;"> {{ item }}	</span>
+		        </nz-list-item>
+		      </ng-template>
+		    </nz-list>
+		</div>
+	  </div>
+    </nz-card>
+  </div>
+</div>

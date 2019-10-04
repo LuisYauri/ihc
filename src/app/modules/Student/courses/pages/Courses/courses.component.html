@@ -6,8 +6,30 @@
         <div class="card-title--cicle">{{cicle}}</div>
       </div>
       <div nz-row>
+      	<div style="float: right; margin-bottom: 15px;">
+    		<div nz-col nzSpan="12">
+				<nz-select
+				      style="width: 200px;"
+				      nzShowSearch
+				      nzAllowClear
+				      nzPlaceHolder="Seleccione un ciclo"
+				    >
+				      <nz-option nzLabel="Ciclo I" nzValue="1"></nz-option>
+				      <nz-option nzLabel="Ciclo I" nzValue="2"></nz-option>
+				      <nz-option nzLabel="Ciclo II" nzValue="3"></nz-option>
+				      <nz-option nzLabel="Ciclo III" nzValue="4"></nz-option>
+				      <nz-option nzLabel="Ciclo IV" nzValue="5"></nz-option>
+				      <nz-option nzLabel="Ciclo V" nzValue="6"></nz-option>
+				      <nz-option nzLabel="Ciclo VI" nzValue="7"></nz-option>
+				      <nz-option nzLabel="Ciclo VII" nzValue="8"></nz-option>
+				      <nz-option nzLabel="Ciclo VIII" nzValue="9"></nz-option>
+				</nz-select>
+    		</div>
+      	</div>
+      </div>
+      <div nz-row>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px; margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate1">
+		  	<nz-card nzHoverable style=" margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate1" (click)="viewCourses()">
 			  <nz-card-meta nzTitle="Programación" nzDescription="Shirley Reaño"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate1>
@@ -15,7 +37,7 @@
 			</ng-template>
 		</div>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px;margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate2">
+		  	<nz-card nzHoverable style="margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate2">
 			  <nz-card-meta nzTitle="Angular" nzDescription="Robert Goñi"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate2>
@@ -23,7 +45,7 @@
 			</ng-template>
 		</div>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px;margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate3">
+		  	<nz-card nzHoverable style="margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate3">
 			  <nz-card-meta nzTitle="Patrones de Diseño" nzDescription="Luis Yauri"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate3>
@@ -31,7 +53,7 @@
 			</ng-template>
 		</div>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px;margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
+		  	<nz-card nzHoverable style="margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
 			  <nz-card-meta nzTitle="Java" nzDescription="Alisson Arroyo"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate4>
@@ -39,7 +61,7 @@
 			</ng-template>
 		</div>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px;margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
+		  	<nz-card nzHoverable style="margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
 			  <nz-card-meta nzTitle="Java" nzDescription="Alisson Arroyo"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate4>
@@ -47,7 +69,7 @@
 			</ng-template>
 		</div>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px;margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate3">
+		  	<nz-card nzHoverable style="margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate3">
 			  <nz-card-meta nzTitle="Patrones de Diseño" nzDescription="Luis Yauri"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate3>
@@ -55,7 +77,7 @@
 			</ng-template>
 		</div>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px;margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
+		  	<nz-card nzHoverable style="margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
 			  <nz-card-meta nzTitle="Java" nzDescription="Alisson Arroyo"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate4>
@@ -63,7 +85,7 @@
 			</ng-template>
 		</div>
 		<div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="8" nzXl="6">
-		  	<nz-card nzHoverable style="width:240px;margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
+		  	<nz-card nzHoverable style="margin: 10px;margin-bottom: 20px;" [nzCover]="coverTemplate4">
 			  <nz-card-meta nzTitle="Java" nzDescription="Alisson Arroyo"></nz-card-meta>
 			</nz-card>
 			<ng-template #coverTemplate4>
