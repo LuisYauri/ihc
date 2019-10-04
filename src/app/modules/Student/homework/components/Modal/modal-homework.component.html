@@ -1,0 +1,59 @@
+<div>
+  <div *ngIf="flag==0">
+    <p>{{text}}</p>
+    <div nz-row>
+      <div nz-col nzSpan="7">
+        <div class="exercise">
+          <nz-card class="exercise--card" nzTitle="Ejercicio 1">
+            <div class="exercise--block">
+              <img class="exercise--img" src="https://image.flaticon.com/icons/svg/337/337946.svg" alt="">
+            </div>
+          </nz-card>
+          <button class="exercise--btn" nz-button nzType="default">Apoyo</button>
+        </div>
+      </div>
+      <div nz-col nzSpan="17">
+        <nz-table class="table-home" #basicTable [nzData]="varTable.content" [nzPageSize]="5"
+                  [nzShowPagination]="false">
+          <thead>
+          <tr>
+            <th *ngFor="let column of varTable.title">{{column}}</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let data of basicTable.data">
+            <td>{{ data.estado }}</td>
+            <td>{{ data.pendiente }}</td>
+          </tr>
+          </tbody>
+        </nz-table>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="flag==1">
+    <p>{{text_2}}</p>
+    <div nz-row>
+      <div nz-col nzSpan="24">
+        <nz-upload
+          nzType="drag"
+          [nzMultiple]="true"
+          [nzLimit]="2"
+          nzAction="https://jsonplaceholder.typicode.com/posts/"
+        >
+          <p class="ant-upload-drag-icon">
+            <i nz-icon nzType="inbox"></i>
+          </p>
+          <p class="ant-upload-text">Click or drag file to this area to upload</p>
+          <p class="ant-upload-hint">
+            Support for a single or bulk upload. Strictly prohibit from uploading company data or other band files
+          </p>
+        </nz-upload>
+      </div>
+    </div>
+  </div>
+</div>
+<div *nzModalFooter>
+  <button *ngIf="flag==0" nz-button nzType="default" (click)="next()">Siguiente</button>
+  <button *ngIf="flag==1" nz-button nzType="default" (click)="preview()">Atrás</button>
+  <button *ngIf="flag==1" nz-button nzType="default" (click)="send()">Enviar</button>
+</div>

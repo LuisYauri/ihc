@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {NzModalService} from 'ng-zorro-antd';
+import {ModalHomeworkComponent} from '../../components/Modal/modal-homework.component';
 
 @Component({
   selector: 'app-homework',
@@ -114,11 +116,18 @@ export class HomeworkComponent implements OnInit {
     ]
   };
 
-  constructor() {
+  constructor(private modalService: NzModalService) {
   }
 
   ngOnInit() {
   }
 
 
+  showModal(title:string) {
+    this.modalService.create({
+      nzTitle: title,
+      nzContent: ModalHomeworkComponent,
+      nzWidth: '800'
+    });
+  }
 }

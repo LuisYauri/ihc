@@ -1,0 +1,24 @@
+.exercise{
+  margin: 20px;
+  &--img{
+    width: 100px;
+    height: 100px;
+  }
+  &--block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &--card{
+    width: 100%;
+    height: 100%;
+  }
+  &--btn{
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.table-home{
+  margin: 20px;
+}

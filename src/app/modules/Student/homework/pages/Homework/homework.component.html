@@ -19,7 +19,7 @@
           <td>{{ data.date }}</td>
           <td>{{ data.time }}</td>
           <td>
-            <button nz-button nzType="primary">Visualizar</button>
+            <button nz-button nzType="primary" (click)="showModal(data.title)">Visualizar</button>
           </td>
         </tr>
         </tbody>
