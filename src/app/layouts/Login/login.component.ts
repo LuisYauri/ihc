@@ -8,6 +8,9 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  passwordVisible = false
+  password: string
+
   constructor(private router: Router) { }
 
   ngOnInit() {

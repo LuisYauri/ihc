@@ -5,6 +5,7 @@ import {TeacherComponent} from './Teacher/teacher.component';
 import {StudentComponent} from './Student/student.component';
 
 import {LayoutModule} from '../core/components/LayoutComponents/layout.module';
+import {FormsModule} from '@angular/forms';
 
 const COMPONENTS = [LoginComponent, TeacherComponent, StudentComponent];
 
@@ -12,7 +13,8 @@ const COMPONENTS = [LoginComponent, TeacherComponent, StudentComponent];
   declarations: [...COMPONENTS],
   imports: [
     SharedModule,
-    LayoutModule
+    LayoutModule,
+    FormsModule
   ],
   exports: [...COMPONENTS],
 })
