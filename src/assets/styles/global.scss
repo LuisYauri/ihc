@@ -3,3 +3,18 @@
   height: 100%;
 }
 
+
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &--name{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  &--cicle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+}
