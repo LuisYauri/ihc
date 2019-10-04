@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
+  
+  title = 'Cursos';
+  cicle = 'Semestre 2019-II'
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+
+  }
+
+  viewCourses(){
+
   }
 
 }
