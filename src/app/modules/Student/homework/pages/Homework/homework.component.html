@@ -1,25 +1,25 @@
 <div nz-row>
   <div nz-col nzSpan="24">
     <nz-card [nzBordered]="false">
-      <div>{{title}}</div>
-      <nz-table #basicTable [nzData]="listOfData">
+      <div class="card-title">
+        <div class="card-title--name">{{title}}</div>
+        <div class="card-title--cicle">{{cicle}}</div>
+      </div>
+      <nz-table #basicTable [nzData]="varTable.content" [nzPageSize]="5">
         <thead>
         <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Address</th>
-          <th>Action</th>
+          <th *ngFor="let column of varTable.title">{{column}}</th>
         </tr>
         </thead>
         <tbody>
         <tr *ngFor="let data of basicTable.data">
-          <td>{{ data.name }}</td>
-          <td>{{ data.age }}</td>
-          <td>{{ data.address }}</td>
+          <td>{{ data.key }}</td>
+          <td>{{ data.title }}</td>
+          <td>{{ data.course }}</td>
+          <td>{{ data.date }}</td>
+          <td>{{ data.time }}</td>
           <td>
-            <a>Action 一 {{ data.name }}</a>
-            <nz-divider nzType="vertical"></nz-divider>
-            <a>Delete</a>
+            <button nz-button nzType="primary">Visualizar</button>
           </td>
         </tr>
         </tbody>
