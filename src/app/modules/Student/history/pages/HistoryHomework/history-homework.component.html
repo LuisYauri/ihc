@@ -1,1 +1,29 @@
-<p>history-homework works!</p>
+<div nz-row>
+  <div nz-col nzSpan="24">
+    <nz-card [nzBordered]="false">
+      <div class="card-title">
+        <div class="card-title--name">{{title}}</div>
+        <div class="card-title--cicle">{{cicle}}</div>
+      </div>
+      <nz-table #basicTable [nzData]="varTable.content" [nzPageSize]="5">
+        <thead>
+        <tr>
+          <th *ngFor="let column of varTable.title">{{column}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>{{ data.key }}</td>
+          <td>{{ data.title }}</td>
+          <td>{{ data.course }}</td>
+          <td>{{ data.date }}</td>
+          <td>{{ data.time }}</td>
+          <td>
+            <button nz-button nzType="primary" (click)="showModal(data.title)">Visualizar</button>
+          </td>
+        </tr>
+        </tbody>
+      </nz-table>
+    </nz-card>
+  </div>
+</div>

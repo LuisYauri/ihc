@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NzModalRef} from 'ng-zorro-antd';
 
 @Component({
-  selector: 'app-modal-homework',
-  templateUrl: './modal-homework.component.html',
-  styleUrls: ['./modal-homework.component.scss']
+  selector: 'app-modal-history',
+  templateUrl: './modal-history.component.html',
+  styleUrls: ['./modal-history.component.scss']
 })
-export class ModalHomeworkComponent implements OnInit {
+export class ModalHistoryComponent implements OnInit {
 
   text = 'La tarea consiste en realizar la misma actividad que realiza la aplicacion de consola Ahora con JSP y Servlets. Se requiere los archivos fuente para poder ejecurarlos como prueba de su funcionamiento.';
   text_2 = 'Solo se puede subir archivos con un peso máximo de 50mb'
@@ -32,11 +32,6 @@ export class ModalHomeworkComponent implements OnInit {
         key: '1',
         estado: 'Archivo enviado',
         pendiente: 'Ejercicio JSP.rar',
-      },
-      {
-        key: '1',
-        estado: 'Tiempo restante',
-        pendiente: '2 horas',
       },
     ]
   };

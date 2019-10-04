@@ -17,17 +17,18 @@ export class MenuLeftStudentComponent implements OnInit {
       icon: 'calculator',
     },
     {
-      title: 'Historial de Tareas',
-      key: 'History',
-      url: '/student/history-homework',
-      icon: 'file-text',
-    },
-    {
       title: 'Cursos',
       key: 'Courses',
       url: '/student/courses',
       icon: 'read',
     },
+    {
+      title: 'Historial de Tareas',
+      key: 'History',
+      url: '/student/history-homework',
+      icon: 'file-text',
+    },
+
   ]
 
   constructor() { }
