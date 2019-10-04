@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NzModalService} from 'ng-zorro-antd';
 import {ModalHomeworkComponent} from '../../../homework/components/Modal/modal-homework.component';
+import {ModalHistoryComponent} from '../../components/Modal/modal-history.component';
 
 @Component({
   selector: 'app-history-homework',
@@ -126,7 +127,7 @@ export class HistoryHomeworkComponent implements OnInit {
   showModal(title:string) {
     this.modalService.create({
       nzTitle: title,
-      nzContent: ModalHomeworkComponent,
+      nzContent: ModalHistoryComponent,
       nzWidth: '800'
     });
   }
