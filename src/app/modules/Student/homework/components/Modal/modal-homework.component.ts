@@ -10,6 +10,8 @@ export class ModalHomeworkComponent implements OnInit {
 
   text = 'La tarea consiste en realizar la misma actividad que realiza la aplicacion de consola Ahora con JSP y Servlets. Se requiere los archivos fuente para poder ejecurarlos como prueba de su funcionamiento.';
   text_2 = 'Solo se puede subir archivos con un peso máximo de 50mb'
+  text_video = 'Material de Ayuda'
+  text_comment = 'Comentarios'
   varTable = {
     title: [
       'Estado de entrega',
@@ -61,5 +63,9 @@ export class ModalHomeworkComponent implements OnInit {
 
   send() {
     this.modal.destroy();
+  }
+
+  changeHelp() {
+    this.flag = 2;
   }
 }
