@@ -14,7 +14,21 @@ const routes: Routes = [
   },
   {
     path: 'student',
-    component: StudentComponent
+    component: StudentComponent,
+    children: [
+      {
+        path: 'homework',
+        loadChildren: 'src/app/modules/Student/homework/homework.module#HomeworkModule',
+      },
+      {
+        path: 'history-homework',
+        loadChildren: 'src/app/modules/Student/history/history-homework.module#HistoryHomeworkModule',
+      },
+      {
+        path: 'courses',
+        loadChildren: 'src/app/modules/Student/courses/courses.module#CoursesModule',
+      },
+    ],
   },
   {
     path: 'teacher',

@@ -1,0 +1,21 @@
+@import 'src/assets/styles/global.scss';
+
+nz-header {
+  background: #fff;
+  padding: 0;
+}
+
+nz-content {
+  margin: 0 16px;
+}
+
+.header__box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &--btn{
+    margin-right: 30px;
+  }
+}
